@@ -1,6 +1,6 @@
 # ZSH Archive Plugin
 
-This is a individual fork of the [Prezto Module](https://github.com/sorin-ionescu/prezto/tree/master/modules/archive)
+This is a individual fork of the [Prezto Module](https://github.com/sorin-ionescu/prezto/tree/master/modules/archive), updated to the commit [2c66331](https://github.com/sorin-ionescu/prezto/commit/2c663313168490d28f607738e962aa45ada0e26b)
 
 # Archive
 

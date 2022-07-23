@@ -1,6 +1,6 @@
 # ZSH Archive Plugin
 
-This is a individual fork of the [Prezto Module](https://github.com/sorin-ionescu/prezto/tree/master/modules/archive), updated to the commit [2c66331](https://github.com/sorin-ionescu/prezto/commit/2c663313168490d28f607738e962aa45ada0e26b)
+This is a individual fork of the [Prezto Module](https://github.com/sorin-ionescu/prezto/tree/master/modules/archive), updated to the commit [2c66331](https://github.com/sorin-ionescu/prezto/commit/2c663313168490d28f607738e962aa45ada0e26b), with additional support for [pixz (parallel index xz)](https://github.com/vasi/pixz) and [brotli (faster and better text compression)](https://github.com/google/brotli).
 
 # Archive
 
@@ -23,12 +23,16 @@ installed:
 
 - _.tar.gz_, _.tgz_ require `tar` (optionally `pigz`).
 - _.tar.bz2_, _.tbz_ require `tar` (optionally `pbzip2`).
+- _.tar.br_, _.tbr_ require `tar` with `brotli`.
 - _.tar.xz_, _.txz_ require `tar` with _xz_ support.
+- _.p.tar.xz_, _.tpxz_ require `tar` with `pixz`.
 - _.tar.zma_, _.tlz_ require `tar` with _lzma_ support.
 - _.tar_ requires `tar`.
 - _.gz_ requires `gunzip`.
+- _.br_ requires `brotli`.
 - _.bz2_ requires `bunzip2`.
 - _.xz_ requires `unxz`.
+- _p.xz_ requires `pixz`.
 - _.lzma_ requires `unlzma`.
 - _.Z_ requires `uncompress`.
 - _.zip_, _.jar_ requires `unzip`.

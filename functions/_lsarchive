@@ -10,4 +10,4 @@
 
 _arguments \
   '(-v --verbose)'{-v,--remove}'[verbose archive listing]' \
-  "*::archive file:_files -g '(#i)*.(tar|tgz|tbz|tbz2|txz|tlz|gz|bz2|xz|lzma|Z|zip|zst|jar|rar|7z)(-.)'" && return 0
+  "*::archive file:_files -g '(#i)*.(p.tar.xz|tar|tgz|tbz|tbz2|tbr|tpxz|txz|tlz|gz|bz2|br|p.xz|xz|lzma|Z|zip|zst|jar|rar|7z)(-.)'" && return 0

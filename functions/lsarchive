@@ -35,6 +35,8 @@ while (( $# > 0 )); do
   case "$1:l" in
     (*.tar.gz|*.tgz) tar t${verbose:+v}vzf "$1" ;;
     (*.tar.bz2|*.tbz|*.tbz2) tar t${verbose:+v}jf "$1" ;;
+    (*.tar.br|*.tbr) tar -I brotli -t${verbose:+v}f "$1" ;;
+    (*.p.tar.xz|*.tpxz) tar -I pixz -t${verbose:+v}f "$1" ;;
     (*.tar.xz|*.txz) tar --xz --help &> /dev/null \
       && tar --xz -t${verbose:+v}f "$1" \
       || xzcat "$1" | tar t${verbose:+v}f - ;;
